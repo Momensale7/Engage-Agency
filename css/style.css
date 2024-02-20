@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    box-sizing:border-box ;
+}
+@font-face {
+    font-family:'open-sans';
+    src: url(../Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body {
+    font-family:'open-sans';
+}
+/* hero section */
+.home {
+    height: 600px;
+    background-image: url(https://www.engage.veented.com/agency/wp-content/uploads/sites/31/2017/08/full-8-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* z-index: -2; */
+
+}
+.overlay {
+    background-color: rgba(25, 118, 210, 0.702);
+    /* z-index: -1; */
+}
+/* nav bar */
+.nav-bg{
+    background-color: white;
+}
+.logo-light{
+    display: none;
+}
+nav .nav-item a{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+.search-icon{
+    color:#333;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #1976d2;
+}
+
+nav img{
+    width: 150px;
+}
+
+/* home caption */
+.home h1 {
+    font-size: 2.5rem; 
+    color: white;
+}
+.welcome-p {
+    font-size: 16px;
+    line-height: 41px;
+}
+.btn-more a{
+    color: #222222;
+    text-decoration: none;
+    font-size: 15;
+    font-weight: bold;
+}
+.home-desciption {
+    max-width: 500px;
+    font-size: 16px;
+}
+
+.btn-more {
+    --bs-btn-padding-x: 1.75rem;
+    --bs-btn-padding-y: 1rem;
+}
+
+.moving-btn{
+    justify-self: flex-end;
+    width:30px;
+    height: 45px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+}
+.moving-item{
+    
+    width:8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: 2s moving infinite;
+}
+@keyframes moving {
+    0%{transform: translateY(-15px);}
+    50%{transform: translateY(0px);}
+    100%{opacity: 0;}
+}
+/* modal */
+.modal {
+    --bs-modal-zindex: 1055;
+    --bs-modal-width: 100%;
+    --bs-modal-padding: 1rem;
+    --bs-modal-margin: 0.5rem;
+    --bs-modal-bg:transparent;
+      background-color: rgba(0,0 ,0 , 0.5);
+    }
+.search-pop input {
+        font-size: 5rem;
+        font-weight: 300;
+        width: 100%;
+        height: 50%;
+        padding: 0 10px;
+        outline: none !important;
+        background: transparent;
+        color: #fff;
+        border: none !important;
+        border-bottom: 1px solid #909090 !important;
+    }
+    .search-pop button {
+        background-color: transparent;
+        border: 0;
+        color: white;
+        font-size: 30px;
+        width: 80px;
+    }
+
+    /* recent work */
+
+    .work .nav-tabs .nav-item.show .nav-link, .work .nav-tabs .nav-link.active {
+        color:#2d2c2c;
+        position: relative;
+       
+    }
+    .work .nav-tabs .nav-link.active::before{
+        content: "";
+        bottom: 0;
+        position: absolute;
+        width: 70%;
+        height: 1px;
+        background-color: rgba(0,0,0,0.2);
+    }
+    .work .nav-link:focus, .work .nav-link:hover {
+        color: #2d2c2c;
+    }
+    .work .nav-link {
+        color: #888888;
+        border: 0;
+    }
+    
+    .icon-contain{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: 0.5rem;
+       
+    }
+    .icon-contain:hover{
+        background-color: rgba(255,255,255,0.8);
+    }
+    .overlay-image {
+        background-color:rgba(0,0,0,0.7);
+        transform: translateY(101%);
+        transition: 0.5s all ;
+    }
+    .work-image{
+        overflow: hidden;
+    }
+    .work-image:hover .overlay-image{
+        transform: translateY(0);
+    }
+    .work-image img {
+        transition: 1s all ;
+    }
+    
+    .work-image:hover img {
+        transform: scale(1.3);
+    }
+
+    /* Testimonials */
+    .feedback {
+        color: #212529;
+        line-height: 24px;
+        background-color: #eee;
+    }
+    
+    .testimonial-author {
+        font-size: 15;
+        font-weight: 500;
+        color: #686868;
+    }
+    .testimonial-org {
+        font-size: 15;
+        font-weight: 300;
+        color: #686868;
+    }
+     .testimonial .carousel-indicators [data-bs-target] ,.latest-news .carousel-indicators [data-bs-target] {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #686868;
+        border: 1px solid transparent;
+    }
+    .testimonial .carousel-indicators .active ,.latest-news .carousel-indicators .active {
+        background-color: #fff;
+        border: 1px solid #686868;
+    }
+    .latest-news .card-title a{
+        font-size: 20px;
+        color: #212529;
+    }
+    .latest-news .card-title a:hover {
+        color:#1976d2 ;
+    }
+    .latest-news .card-body span{
+        font-size: 13px;
+        color: #aaaaaa;
+        display: inline-block;
+    }
+
+    .btn-card{
+        text-decoration: none;
+        color: #212529;
+    }
+    .btn-card:hover{
+        color: #1976d2;
+        i{
+            transform: translateX(30%);
+        }
+    }
+    .latest-news .btn:hover {
+        color: #fff;
+        background-color: #212529;
+        border-color: #212529 ;
+    }
+    /* footer */
+    .footer-d {
+        background-color:#1b1b1b ;
+    }
+    .footer-d p ,.footer-d li ,.footer-social p {
+        color: #797979;
+        line-height: 26px;
+    }
+    .footer-d li {
+        border-bottom: 1px solid rgb(121, 121, 121 ,0.8);
+        padding-block: 0.7rem;
+    }
+    .footer-copy{
+        background-color: #151515;
+    }
+    .icon-holder{
+        width: 30px;
+        height: 30px;
+        background-color: #131313;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #797979;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    .icon-holder:hover i{
+        color: #FFF;
+    }
+    .icon-holder:hover{
+        background-color: #3b5998 ;
+    }
+    .google-icon:hover{
+        background-color: #dd4b39 ;
+    }
+    .in-icon:hover{
+        background-color: #007bb5 ;
+    }
+    .twitter-icon:hover{
+        background-color: #00aced ;
+    }
+

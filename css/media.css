@@ -1,0 +1,43 @@
+@media (min-width:992px) {
+    .nav-bg{
+        background-color: rgba(25, 118, 210, 0.702);
+    }
+    nav .nav-item a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .nav-link:focus, .nav-link:hover{
+        color: #fff;
+    }
+    .dropdown-menu{
+        background-color: #131511;
+    }
+    .home .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+
+.search-icon{
+    color: white;
+}
+.home {
+    height: 800px;
+}
+.home h1 {
+    font-size: 4rem; 
+}
+.welcome-p {
+    font-size: 22px;
+    line-height: 41px;
+}
+.home-desciption {
+    max-width: 700px;
+    font-size: 22px;
+}
+.logo-dark{
+    display: none;
+}
+.logo-light{
+    display: inline;
+}
+}
